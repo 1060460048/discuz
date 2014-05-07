@@ -53,6 +53,7 @@ function html_login_header($form = true) {
 <title>$title</title>
 <link rel="stylesheet" href="static/image/admincp/admincp.css" type="text/css" media="all" />
 <meta content="Comsenz Inc." name="Copyright" />
+<link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
 EOT;

@@ -384,6 +384,7 @@ function cpheader() {
 <meta http-equiv="Content-Type" content="text/html; charset=$charset">
 <meta http-equiv="x-ua-compatible" content="ie=7" />
 <link href="static/image/admincp/admincp.css?{$_G[style][verhash]}" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
 <script type="text/JavaScript">
