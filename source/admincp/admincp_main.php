@@ -42,14 +42,14 @@ if($_G['uid'] && $_G['member']['allowadmincp'] == 1 && ($_G['setting']['showpatc
             $shownotice = '<div class="notice"><a href="'.$basescript.'?action=patch" id="notice">'.($notice['fixed'] ? $lang['patch_fix_complete'] : $lang['patch_fix_rigth_now']).'</a></div>';
         }
     }
-	if(false && !isset($_G['cookie']['checkpatch'])) {
-		$discuz_patch->check_patch();
-	}
+    if(false && !isset($_G['cookie']['checkpatch'])) {
+        $discuz_patch->check_patch();
+    }
 }
 if($_G['uid'] && $_G['member']['allowadmincp'] == 1 && !$shownotice && $_G['setting']['upgrade']) {
     $shownotice = '<div class="notice"><a href="'.$basescript.'?action=upgrade" id="notice">'.$lang['upgrade_right_now'].'</a></div>';
 }
-if($_G['uid'] && $_G['member']['allowadmincp'] == 1 && !isset($_G['cookie']['checkupgrade'])) {
+if(false && $_G['uid'] && $_G['member']['allowadmincp'] == 1 && !isset($_G['cookie']['checkupgrade'])) {
     $discuz_upgrade = new discuz_upgrade();
     if($discuz_upgrade->check_upgrade()) {
         if(empty($shownotice)) {
