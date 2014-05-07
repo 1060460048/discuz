@@ -965,7 +965,7 @@ function cpfooter() {
 		function_exists('debugmessage') && debugmessage();
 	}
 
-	if($_G['adminid'] == 1 && $_GET['action'] == 'index') {
+	if(false && $_G['adminid'] == 1 && $_GET['action'] == 'index') {
 		$release = DISCUZ_RELEASE;
 
 		$newsurl =  'ht'.'tp:/'.'/cus'.'tome'.'r.disc'.'uz.n'.'et/n'.'ews'.'.p'.'hp?'.siteinformation();

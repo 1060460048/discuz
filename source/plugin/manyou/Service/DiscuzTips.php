@@ -26,6 +26,7 @@ class Cloud_Service_DiscuzTips {
 	}
 
 	public function show() {
+		return;
 		global $_G;
 		if($_G['inajax']) {
 			return '';
